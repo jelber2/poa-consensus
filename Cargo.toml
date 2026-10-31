@@ -23,6 +23,9 @@ exclude = [
 [lib]
 name = "poa_consensus"
 path = "src/lib.rs"
+# `staticlib` is what longcallD links against (see its Makefile); `rlib` keeps
+# the normal Rust library and test targets working.
+crate-type = ["rlib", "staticlib"]
 
 [[bin]]
 name = "poa-consensus"

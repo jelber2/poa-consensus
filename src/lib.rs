@@ -361,6 +361,7 @@
 pub mod analysis;
 pub mod config;
 pub mod error;
+pub mod ffi;
 pub mod flank;
 mod hpc;
 pub mod orient;
